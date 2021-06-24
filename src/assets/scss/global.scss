@@ -1,0 +1,20 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	--color-bg: #f8f8f8;
+	--default-color: #29292e;
+
+	background: var(--color-bg);
+	color: var(--default-color);
+}
+
+body,
+input,
+button,
+textarea {
+	font: 400 16px "Roboto", sans-serif;
+}
