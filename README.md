@@ -23,15 +23,6 @@ yarn run start
 yarn run test
 ```
 
-## Author
-
-👤 **Gustavo**
-
-* Github: [@gustavobtflores](https://github.com/gustavobtflores)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
 ***
+
 _Made with :heart: by Gustavo Bernardo_
