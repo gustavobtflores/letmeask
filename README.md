@@ -1,28 +1,30 @@
-<h1 align="center">Welcome to LetMeAsk 👋</h1>
+<h1 align="center">Bem-vindo ao LetMeAsk 👋</h1>
 <img alt="LetMeAsk" src="https://i.imgur.com/h78bcQS.png" />
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-</p>
+
 
 > NLW#6 - LetMeAsk
 
-## Install
+## Iniciando 🚀
+
+Clone o repositório e acesse a pasta do projeto com os códigos abaixo:
+
+```sh
+git clone https://github.com/gustavobtflores/letmeask.git
+cd letmeask
+```
+Instale as dependências: 
 
 ```sh
 yarn install
 ```
-
-## Usage
+Inicie o projeto:
 
 ```sh
 yarn start
 ```
 
-## Run tests
+O app poderá ser visualizado no http://localhost:3000/
 
-```sh
-yarn run test
-```
 
 ***
 
