@@ -7,6 +7,7 @@ import "../assets/scss/auth.scss";
 import { useAuth } from "../hooks/useAuth";
 import { FormEvent, useState } from "react";
 import { database } from "../services/firebase";
+import toast, { Toaster } from "react-hot-toast";
 
 export function Home() {
 	const history = useHistory();
@@ -30,14 +31,21 @@ export function Home() {
 		const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
 		if (!roomRef.exists()) {
-			alert("Room does not exists.");
+			toast.error("Essa sala não existe");
 			return;
 		}
+
+		if (roomRef.val().endedAt) {
+			toast.error("Essa sala foi encerrada");
+			return;
+		}
+
 		history.push(`/rooms/${roomCode}`);
 	}
 
 	return (
 		<div id="page-auth">
+			<Toaster />
 			<aside>
 				<img
 					src={illustrationImg}
